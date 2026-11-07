@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsae-lapsim"
+version = "0.1.0"
+description = "FSAE 4-corner state-space vehicle model and lap-time simulator"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+mat = ["h5py>=3.8"]
+test = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["fsae_lapsim*"]

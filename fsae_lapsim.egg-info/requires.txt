@@ -1,0 +1,9 @@
+matplotlib>=3.7
+numpy>=1.24
+scipy>=1.10
+
+[mat]
+h5py>=3.8
+
+[test]
+pytest>=7.0
